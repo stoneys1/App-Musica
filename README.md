@@ -5,6 +5,9 @@ APP de Musica criado com : •HTML •CSS •JavaScript
 
 
 •Player:📸
+
+
+
 ![image](https://github.com/stoneys1/App-Musica/assets/98463307/5233306a-562e-41fe-bbf2-45f570881a53)
 
 ![image](https://github.com/stoneys1/App-Musica/assets/98463307/30e23cce-b9cc-4242-91bc-e17faabb8bcf)
