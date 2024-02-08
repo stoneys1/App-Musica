@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Stoneys Music</title>
+</head>
+<body>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="bx bx-planet"></i>
+                <a href="#">Stoneys Music</a>
+            </div>
+
+            <div class="menu">
+                <h5>Menu</h5>
+                <ul>
+                   <li>
+                    <i class='bx bxs-bolt-circle' ></i>
+                    <a href="#">Explorar</a>
+                </li>
+                   <li>
+                    <i class='bx bx-volume-full' ></i>
+                    <a href="#">Gêneros</a>
+                </li>
+                   <li>
+                    <i class='bx bxs-disc' ></i>
+                    <a href="#">Albums</a>
+                </li>
+                   <li>
+                    <i class='bx bxs-microphone' ></i>
+                    <a href="#">Artistas</a>
+                </li>
+                   <li>
+                    <i class='bx bx-podcast' ></i>
+                    <a href="#">Podcast</a>
+                </li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <h5>Biblioteca</h5>
+                <ul>
+                   <li>
+                    <i class='bx bx-undo' ></i>
+                    <a href="#">Recentes</a>
+                </li>
+                   <li>
+                    <i class='bx bxs-heart' ></i>
+                    <a href="#">Favoritos</a>
+                </li>
+                   <li>
+                    <i class='bx bxs-photo-album' ></i>
+                    <a href="#">Albums</a>
+                </li>
+                   <li>
+                    <i class='bx bxs-folder' ></i>
+                    <a href="#">Local</a>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <h5>Playlist</h5>
+                <ul>
+                   <li>
+                    <i class='bx bxs-plus-circle' ></i>
+                    <a href="#">Criar Playlist</a>
+                </li>
+                   <li>
+                    <i class='bx bxs-caret-right-circle' ></i>
+                    <a href="#">Classics For Crying</a>
+                </li>
+                   <li>
+                    <i class='bx bxs-caret-right-circle' ></i>
+                    <a href="#">The Beautiful & Damned</a>
+                </li>
+                   <li>
+                    <i class='bx bxs-caret-right-circle' ></i>
+                    <a href="#">Post Malone</a>
+                </ul>
+            </div>
+
+            <div class="playing">
+                <div class="top">
+                    <img src="./Assets/billie.jpeg">
+                    <h4>Apple<br>iPhone 15 Pro Max</h4>
+                </div>
+                <div class="bottom">
+                    <i class='bx bx-podcast' ></i>
+                    <p>Tocando nesse Dispositivo</p>
+                </div>
+            </div>
+        
+        
+        </aside>
+
+        <main>
+            <header>
+                <div class="nav-links">
+                    <a href="#">Musica</a>
+                    <a href="#">Live</a>
+                    <a href="#">Podcast</a>
+                </div>
+
+
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                    <input type="text"
+                    placeholder="O que você quer ouvir?">
+                </div>
+
+            </header>
+
+            <div class="trending">
+                <div class="left">
+                    <h5>Musica Da Semana!</h5>
+                    <div class="info">
+                        <h2>Too Cool To Die</h2>
+                        <h4>Post Malone</h4>
+                        <h5>39 Milhoes De Reproduções</h5>
+                        <div class="buttons">
+                            <button onclick="toggleAudio('audio01', 'Too Cool To Die', 'Post Malone', './Assets/post.jpeg')">Ouça Agora</button>
+                            <i class='bx bxs-heart'></i>
+                        </div>
+                    </div>
+                    <audio id="audio01">
+                        <source src="./Audio/Post Malone - Too Cool To Die (Official Audio)_YsfvGnDW1bk.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+                <img src="./Assets/post.jpeg">
+            </div>
+
+
+            <div class="playlist">
+                <div class="Gêneros">
+                    <div class="header">
+                        <h5>Gêneros</h5>
+                        <a href="#">Ver Todos</a>
+                    </div>
+
+                    <div class="items">
+                        <div class="item">
+                            <p>Eletrônica<br>Pop</p>
+                        </div>
+                        <div class="item">
+                            <p>Dance<br>Jazz</p>
+                        </div>
+                        <div class="item">
+                            <p>R&B<br>Hip-Hop</p>
+                        </div>
+                        <div class="item">
+                            <p>Country<br>Rap</p>
+                        </div>
+                        <div class="item">
+                            <p>Indie<br>Alternativa</p>
+                        </div>
+                        <div class="item">
+                            <p>Rock<br>Metal</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="music-list">
+                    <div class="header">
+                        <h5>Melhores Músicas</h5>
+                        <a href="#">Ver Todas</a>
+                    </div>
+
+                    <div class="items">
+                        <div class="item">
+                            <div class="info">
+                                <p>01</p>
+                                <img src="./Assets/metrooo.jpeg">
+                                <div class="details">
+                                    <h5>Creepin</h5>
+                                    <p>Metro Boomin, The Weekend, 21 Savage</p>
+                                </div>
+                            </div>
+                            <audio id="audio02">
+                                <source src="./Audio/Creepin'_LOqGYF0oFIg.mp3" type="audio/mpeg">
+                            </audio>
+                            <div class="actions">
+                                <p>03:41</p>
+                                <div class="icon">
+                                    <i class='bx bxs-right-arrow' onclick="toggleAudio('audio02', 'Creepin', 'Metro Boomin, The Weekend, 21 Savage', './Assets/metrooo.jpeg')"></i>
+                                </div>
+                                <i class='bx bxs-plus-square' ></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <p>02</p>
+                                <img src="./Assets/21.jpeg">
+                                <div class="details">
+                                    <h5>Dangerous</h5>
+                                    <p>21 Savage, Lil Durk, Metro Boomin</p>
+                                </div>
+                            </div>
+                            <audio id="audio03">
+                                <source src="./Audio/21 Savage, Lil Durk, Metro Boomin - dangerous (Official Audio)_Gy6urUcig5A.mp3" type="audio/mpeg">
+                            </audio>
+                            <div class="actions">
+                                <p>04:25</p>
+                                <div class="icon">
+                                    <i class='bx bxs-right-arrow' onclick="toggleAudio('audio03', 'Dangerous', '21 Savage, Lil Durk, Metro Boomin', './Assets/21.jpeg')" ></i>
+                                </div>
+                                <i class='bx bxs-plus-square' ></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <p>03</p>
+                                <img src="./Assets/westcoast.jpeg">
+                                <div class="details">
+                                    <h5>West Coast</h5>
+                                    <p>G-Eazy, Blueface</p>
+                                </div>
+                            </div>
+                            <audio id="audio04">
+                                <source src="./Audio/G-Eazy, Blueface - West Coast (Audio)_9FrWYzENEbo.mp3" type="audio/mpeg">
+                            </audio>
+                            <div class="actions">
+                                <p>02:19</p>
+                                <div class="icon">
+                                    <i class='bx bxs-right-arrow' onclick="toggleAudio('audio04', 'West Coast', 'G-Eazy, Blueface', './Assets/westcoast.jpeg')" ></i>
+                                </div>
+                                <i class='bx bxs-plus-square' ></i>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <p>04</p>
+                                <img src="./Assets/ric.jpeg">
+                                <div class="details">
+                                    <h5>Ric Flair Drip</h5>
+                                    <p>Metro Boomin & Offset</p>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <p>02:52</p>
+                                <div class="icon">
+                                    <i class='bx bxs-right-arrow' onclick="toggleAudio('audio05', 'Ric Flair Drip', 'Metro Boomin & Offset', './Assets/ric.jpeg')" ></i>
+                                </div>
+                                <i class='bx bxs-plus-square' ></i>
+                            </div>
+                        </div>
+                        <audio id="audio05">
+                            <source src="./Audio/Offset & Metro Boomin - _Ric Flair Drip_ (Official Audio)_OwbI9IY9Roo.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                
+                </div>
+
+            </div>
+
+
+        </main>
+
+        <div class="right-section">
+            <div class="profile">
+                <i class='bx bxs-bell'></i>
+                <i class='bx bxs-cog' ></i>
+                <div class="user">
+                    <div class="left">
+                        <img src="./Assets/stoney.jpeg">
+                    </div>
+                    <div class="right">
+                        <h5>Stoney</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-player">
+                <div class="top-section">
+                    <div class="header">
+                        <h5>Player</h5>
+                        <i class='bx bxs-playlist'></i>
+                    </div>
+                    <div class="song-info">
+                        <img src="./Assets/spider.jpeg">
+                        <div class="description">
+                            <h3>Home</h3>
+                            <h5>Metro Boomin, Don Toliver, Lil Uzi Vert</h5>
+                        </div>
+                        <div class="progress">
+                            <p class="current-time">0:00</p>
+                            <div class="active-line"></div>
+                            <div class="deactive-line"></div>
+                            <p class="duration">0:00</p>
+                        </div>
+                        <audio id="audioPlayer"></audio>
+                    </div>
+                </div>
+
+                <div class="player-actions">
+                    <div class="buttons">
+                        <i class='bx bx-repeat' id="repeatButton"></i>
+                        <i class='bx bx-first-page' id="firstPageButton"></i>
+                        <i id="playPauseButton" class='bx bxs-right-arrow play-button'></i>
+                        <i class='bx bx-last-page' id="lastPageButton"></i>
+                        <i class='bx bx-transfer-alt' id="transferAltButton"></i>
+                    </div>
+                    <div class="lyrics">
+                        <i class='bx bx-chevron-up'></i>
+                        <h5>LYRICS</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
